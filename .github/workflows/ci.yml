@@ -12,7 +12,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Register checked-out tap
+        run: brew tap exprmntl/tap "$GITHUB_WORKSPACE"
       - name: Audit formula
-        run: brew audit --strict --formula ./Formula/codex-update-helper.rb
+        run: brew audit --strict --formula exprmntl/tap/codex-update-helper
       - name: Check style
-        run: brew style ./Formula/codex-update-helper.rb
+        run: brew style exprmntl/tap/codex-update-helper
