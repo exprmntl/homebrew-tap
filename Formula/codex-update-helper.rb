@@ -1,8 +1,8 @@
 class CodexUpdateHelper < Formula
   desc "Safely finish Codex desktop updates already staged by Sparkle"
   homepage "https://github.com/exprmntl/codex-update-helper"
-  url "file:///private/tmp/codex-update-helper-0.1.0.tar.gz"
-  sha256 "ddd3cdbcb6b69ac2f2b03aecb992f43f9b4598e7e0cd4d729e35f682021a57b7"
+  url "https://github.com/exprmntl/codex-update-helper/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "13669d8b25b541260d2a6c1f7822de7515bfd7a7f8eb3b8464e4149789d609b0"
   license "MIT"
 
   depends_on :macos
