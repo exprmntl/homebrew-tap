@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit formula
+        run: brew audit --strict --formula ./Formula/codex-update-helper.rb
+      - name: Check style
+        run: brew style ./Formula/codex-update-helper.rb
