@@ -2,8 +2,8 @@ class CodexUpdateHelper < Formula
   desc "Safely finish Codex desktop updates already staged by Sparkle"
   homepage "https://github.com/exprmntl/codex-update-helper"
   url "https://github.com/exprmntl/codex-update-helper.git",
-      tag:      "v0.1.0",
-      revision: "aa7167bf76af58d55e57f4b3f74678ddfc48be53"
+      tag:      "v0.1.1",
+      revision: "3e77bd0e69891d92f9b51a6fbf1609f96440fe9e"
   license "MIT"
 
   depends_on :macos
